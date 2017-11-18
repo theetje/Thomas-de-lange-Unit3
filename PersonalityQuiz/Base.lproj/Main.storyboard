@@ -255,6 +255,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Zgt-4A-cPn"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="fRn-aF-pqh" id="bpH-Sd-ZLl"/>
+                        <outlet property="rangedStackView" destination="2Kq-Ia-VyS" id="t99-P1-Xwo"/>
+                        <outlet property="singleStackView" destination="HaN-4r-43T" id="0uO-2B-KPo"/>
                         <segue destination="lLu-q3-6vl" kind="show" identifier="ResultsSegue" id="2BD-Kv-iUT"/>
                     </connections>
                 </viewController>
@@ -271,17 +274,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K1A-Ll-YpR">
-                                <rect key="frame" x="0.0" y="293.5" width="0.0" height="80.5"/>
+                                <rect key="frame" x="0.0" y="293.5" width="375" height="80.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCt-st-fTJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eJ-9D-fe7">
-                                        <rect key="frame" x="0.0" y="60" width="0.0" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
