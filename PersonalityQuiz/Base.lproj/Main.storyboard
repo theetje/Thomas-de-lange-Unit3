@@ -112,6 +112,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfm-WC-Mmt">
+                                <rect key="frame" x="0.0" y="84" width="375" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HaN-4r-43T">
                                 <rect key="frame" x="5" y="243.5" width="46" height="180"/>
                                 <subviews>
@@ -223,12 +229,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfm-WC-Mmt">
-                                <rect key="frame" x="0.0" y="84" width="375" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ht1-Jc-NsH">
                                 <rect key="frame" x="16" y="645" width="343" height="2"/>
                             </progressView>
@@ -255,8 +255,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="Zgt-4A-cPn"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="WSt-Tg-Ybs" id="fSC-h9-OdG"/>
+                        <outlet property="multiLabel2" destination="LLu-ZX-A0T" id="5wV-di-Xr9"/>
+                        <outlet property="multiLabel3" destination="q64-Sf-OFb" id="DlT-C8-upa"/>
+                        <outlet property="multiLabel4" destination="Udt-Gi-IgS" id="5Gj-mh-7Sl"/>
                         <outlet property="multipleStackView" destination="fRn-aF-pqh" id="bpH-Sd-ZLl"/>
+                        <outlet property="questionLabel" destination="bfm-WC-Mmt" id="ecJ-K7-Lua"/>
+                        <outlet property="questionProgressView" destination="Ht1-Jc-NsH" id="Bi1-17-dbG"/>
+                        <outlet property="rangedLabel1" destination="BS2-Fu-STK" id="jgD-Dp-xXB"/>
+                        <outlet property="rangedLabel2" destination="ZNf-fp-3IY" id="0CZ-Dv-UJn"/>
                         <outlet property="rangedStackView" destination="2Kq-Ia-VyS" id="t99-P1-Xwo"/>
+                        <outlet property="singleButton1" destination="gm2-lX-yMA" id="GLS-YS-T71"/>
+                        <outlet property="singleButton2" destination="Ahw-0r-rBP" id="bJn-oh-qzs"/>
+                        <outlet property="singleButton3" destination="kBJ-z0-3kb" id="B14-SP-J8o"/>
+                        <outlet property="singleButton4" destination="UBu-i0-C6m" id="SoB-EG-3pj"/>
                         <outlet property="singleStackView" destination="HaN-4r-43T" id="0uO-2B-KPo"/>
                         <segue destination="lLu-q3-6vl" kind="show" identifier="ResultsSegue" id="2BD-Kv-iUT"/>
                     </connections>
