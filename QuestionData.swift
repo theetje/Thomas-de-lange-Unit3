@@ -60,10 +60,12 @@ var questions: [Question] = [
                 Answer(text: "Eating", type: .dog)
         ]),
     
-    Question(text: "How much do you enjoy car rides?", type: .ranged,
+    Question(text: "How much do you enjoy car rides?",
+             type: .ranged,
              answers: [
                 Answer(text: "I dislike them", type: .cat),
-                Answer(text: "I get a little nervous", type: .turtle),
+                Answer(text: "I get a little nervous", type: .rabbit),
+                Answer(text: "I barely notice them", type: .turtle),
                 Answer(text: "I love them", type: .dog)
         ])
 ]

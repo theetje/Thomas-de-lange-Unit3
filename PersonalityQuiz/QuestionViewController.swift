@@ -94,9 +94,9 @@ class QuestionViewController: UIViewController {
     }
     
     func nextQuestion() {
+        print(questionIndex)
         questionIndex += 1
-        
-        if questionIndex < questions.count {
+        if questionIndex < questions.count{
             updateUI()
         } else {
             performSegue(withIdentifier: "ResultsSegue", sender: nil)
@@ -130,7 +130,7 @@ class QuestionViewController: UIViewController {
             updateSingleStack(using: currentAnswers)
         case .multiple:
             updateMultipleStack(using: currentAnswers)
-        case . ranged:
+        case .ranged:
             updateRangedStack(using: currentAnswers)
         }
     }
